@@ -17,6 +17,7 @@ body {
 }
 
 nav {
+  position: relative;
   background: #fff;
   padding: 0px 10px;
   font-family: "Montserrat", "sans-serif";
@@ -24,10 +25,15 @@ nav {
   line-height: 42px;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 nav a {
   color: black;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .logo {
@@ -40,8 +46,15 @@ nav a {
   border-color: grey;
 }
 
-.projects {
+.projects,
+.challenges {
+  padding-top: 30px;
   padding-bottom: 50px;
+}
+
+.challenges {
+  background-color: rgb(232, 230, 227);
+  font-size: 20px;
 }
 
 .project-image {
@@ -52,6 +65,10 @@ nav a {
 .project-image,
 .project-description {
   width: 50%;
+}
+
+.project {
+  margin-top: 30px;
 }
 
 .project-description {
@@ -85,7 +102,7 @@ nav a {
   padding-right: 20px;
 }
 
-.button-panel button {
+.button-panel a {
   padding: 8px 16px 8px 16px;
   background-color: #4285f4;
   font-weight: bold;
@@ -93,9 +110,10 @@ nav a {
   border-style: none;
   border-radius: 5px;
   transition: 0.2s;
+  text-decoration: none;
 }
 
-.button-panel button:hover {
+.button-panel a:hover {
   background-color: #095fe7;
   cursor: pointer;
 }
@@ -110,6 +128,12 @@ p {
 }
 
 h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -157,7 +181,8 @@ h2 {
     transition: background-color 0.5s ease;
   }
 
-  .projects {
+  .projects,
+  .challenges {
     padding-bottom: 60px;
   }
 
@@ -192,7 +217,8 @@ h2 {
 }
 
 /* Styles for Projects Section */
-.projects p {
+.projects p,
+.challenges p {
   width: 60%;
   margin: auto;
   margin-top: 15px;
