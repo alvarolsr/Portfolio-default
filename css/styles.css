@@ -16,6 +16,7 @@
 body {
   min-width: 375px;
   font-family: "Montserrat", "sans-serif";
+  /*font-family: "Nunito", "sans-serif";*/
 }
 
 nav {
@@ -31,6 +32,16 @@ nav {
 
 nav a {
   color: black;
+}
+
+h1,
+h2,
+h3 {
+  /*font-family: "Montserrat", "sans-serif";*/
+}
+
+h1 {
+  font-size: 32px;
 }
 
 h2 {
@@ -49,9 +60,9 @@ p {
   line-height: 1.5;
 }
 
-.mainContainer {
-  /*padding-top: 0;*/
-  transition: padding 0.5s linear;
+p,
+section a {
+  font-family: "Nunito", "sans-serif";
 }
 
 .logo {
@@ -59,11 +70,16 @@ p {
   width: 300px;
 }
 
+main {
+  transition: padding 0.5s linear;
+}
+
 .picture {
   border-radius: 50%;
   border-color: grey;
 }
 
+/* general styles for projects and challenges section */
 .projects,
 .challenges {
   padding-top: 30px;
@@ -241,7 +257,6 @@ p {
 h1 {
   display: block;
   text-align: center;
-  font-family: "Montserrat", "sans-serif";
   padding: 10px;
 }
 
@@ -252,18 +267,15 @@ h1 {
 
 .card img {
   width: 80%;
-  /*transition: transform 0.25s;*/
 }
 
 .card {
   padding: 15px;
-  /*width: 80%;*/
   text-align: center;
   transition: transform 0.25s;
 }
 
 .card:hover {
-  /*width: 90%;*/
   transform: scale(1.1);
 }
 
@@ -273,7 +285,6 @@ h1 {
   cursor: pointer;
   margin-top: 10px;
   padding: 5px;
-  font-family: "Montserrat", "sans-serif";
   font-weight: bold;
 }
 
