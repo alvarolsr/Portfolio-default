@@ -20,29 +20,34 @@
 
 
     <!--load all styles -->
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">-->
-    <title>Document</title>
+    <title>Alvaro Salazar Personal Portfolio</title>
   </head>
   <body>
     <!--<div class="container">-->
     <!-- FIRST NAVIGATION-->
     <nav class="nav">
-      <div class="container">
+      <div class="wrapper">
         <div class="logo">
           <a href="#"><img src="images/main-logo.png" /></a>
         </div>
         <div class="toggle">
           <a href="#"><i id="toggle-btn" class="fas fa-bars"></i></a>
         </div>
+        <!--<div class="main-list" id="mainListDiv">
+          <ul>
+            <li class="item menu"><a href="#about-me">ABOUT ME</a></li>
+            <li class="item menu"><a href="#projects">PROJECTS</a></li>
+            <li class="item menu"><a href="#tech">TECHNOLOGIES</a></li>
+            <li class="item menu"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>-->
       </div>
       <div class="main-list" id="mainListDiv">
         <ul>
-          <li class="item menu"><a href="#about-me">ABOUT ME</a></li>
-          <li class="item menu"><a href="#projects">PROJECTS</a></li>
-          <li class="item menu"><a href="#tech">TECHNOLOGIES</a></li>
-          <li class="item menu"><a href="#contact">CONTACT</a></li>
+          <li class="menu-item"><a href="#about-me">ABOUT ME</a></li>
+          <li class="menu-item"><a href="#projects">PROJECTS</a></li>
+          <li class="menu-item"><a href="#tech">TECHNOLOGIES</a></li>
+          <li class="menu-item"><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </nav>
@@ -50,7 +55,7 @@
     <section class="about-me" id="about-me">
       <h1>About me</h1>
       <!--<img class="portrait" src="images/portrait.png">-->
-      <p>
+      <p class="description">
         Currently putting in the work to get into Frontend Development.
         Sharpening the skills necessary in order to create great web
         experiences.
@@ -59,7 +64,7 @@
     </section>
     <section id="projects" class="projects">
       <h2>Some projects I've been working on:</h2>
-
+      <p class="description">Sometimes is hard to find a good project idea, so we try our best to get a useful one.</p>
       <div class="project">
         <div class="project-image">
           <img src="images/issueTracker.jpg" />
@@ -70,6 +75,10 @@
             This application allows the user to keep track of issues that have
             appeared during work and then show them listed on screen. It allows
             to create, close and delete issues one at the time.
+          
+          <br><br>
+            Technologies used: HTML, CSS
+
           </p>
           <div class="button-panel">
             <a class="button" href="https://github.com/alvarolsr/JS-Issue-Tracker">
@@ -86,7 +95,7 @@
     </section>
     <section id="challenges" class="challenges">
       <h2>Frontend Mentor Challenges</h2>
-      <p>
+      <p class="description">
         This is my favorite resource to improve  my skills. Frontend Mentor
         challenges are really helpful to learn the best development practices.
       </p>
@@ -121,7 +130,7 @@
 
     <section id="tech" class="tech">
       <h2>Technologies I've been working with:</h2>
-
+<p class="description">After wasting so much time (unfortunately) going back and forth between technologies, I learned the hard way it would be the best to start from the basic frontend stack.</p>
       <div class="cards">
         <div class="card">
           <img src="images/html-logo.png" />
@@ -166,7 +175,7 @@
       </div>
     </section>
     <section class="contact" id="contact">
-      <h1>Contact me</h1>
+      <h2>Contact me</h2>
       <img class="picture" src="images/sq-photo.jpg" />
       <br />
       <div class="contact-message">
